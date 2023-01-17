@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - {% block title %} {% endblock title%}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    {% block others %}{% endblock others %}
+</head>
+<body class="bg-black text-gray-100">
+{% block content %}
+
+
+{% endblock content%}
+</body>
+</html>
