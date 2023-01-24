@@ -65,6 +65,17 @@
         </div>
         
     </section>
+<!--new class-->
+    <section class='min-h-screen bg-black bg-opacity-75 showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat' style="min-height: 70vh;">
+        <div class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Enjoy on your TV.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+            </h5>
+        </div>
+    </section>
 
     <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
         <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
@@ -79,12 +90,5 @@
             <img src="{% static 'netflix_kid.png' %}" class="w-8/12" alt="">
         </div>
     </section>
-    <footer class=" px-5 py-10 ">
-        <ul class="flex justify-between items-center">
-            
-            <li>&copy; 2023</li>
-            <li>Made with &hearts; Django and Tailwind</li>
-            <li>&#10004; By EmmanuelAji</li>
-        </ul>
-    </footer>
+  {% include 'partials/footer.html' %}
 {% endblock content%}
